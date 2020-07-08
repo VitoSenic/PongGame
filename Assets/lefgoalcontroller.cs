@@ -2,23 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lefgoalcontroller : MonoBehaviour
-{
+public class lefgoalcontroller : MonoBehaviour {
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start () {
+
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update () {
+
     }
-    void OnTriggerEnter2D(Collider2D col) {
-        BallController ballTemp = GetComponent<GetComponent>();
-        if (ballTemp != null) {
-        ballTemp.changeP1Score(1);
+    void OnTriggerEnter2D (Collider2D col) {
+        BallController controller = col.gameObject.gameObject.GetComponent<BallController> ();
+        if (controller != null) {
+            Debug.Log ("lol");
         }
     }
 }
