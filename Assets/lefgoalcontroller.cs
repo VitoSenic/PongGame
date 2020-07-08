@@ -15,7 +15,7 @@ public class lefgoalcontroller : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter2D(Colider2D col) {
+    void OnTriggerEnter2D(Collider2D col) {
         BallController ballTemp = GetComponent<GetComponent>();
         if (ballTemp != null) {
         ballTemp.changeP1Score(1);

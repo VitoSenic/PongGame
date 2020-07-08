@@ -15,10 +15,10 @@ public class rightgoalcontroller : MonoBehaviour
     {
         
     }
-     void OnTriggerEnter2D (Colider2D col) {
-     BallController ballTemp = GetComponent<GetComponent>();
-     if (ballTemp != null) {
-     ballTemp.changeP2Score(1);
-     }
- }
+     void OnTriggerEnter2D (Collider2D col) {
+         BallController controller = col.gameObject.gameObject.GetComponent<BallController>();
+         if (controller != null) {
+             Debug.Log("ok");
+         }
+    }
 }
