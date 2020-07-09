@@ -15,7 +15,7 @@ public class lefgoalcontroller : MonoBehaviour {
     void OnTriggerEnter2D (Collider2D col) {
         BallController controller = col.gameObject.gameObject.GetComponent<BallController> ();
         if (controller != null) {
-            Debug.Log ("lol");
+            controller.changeP1Score(1);
         }
     }
 }

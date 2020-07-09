@@ -18,7 +18,7 @@ public class rightgoalcontroller : MonoBehaviour
      void OnTriggerEnter2D (Collider2D col) {
          BallController controller = col.gameObject.gameObject.GetComponent<BallController>();
          if (controller != null) {
-             Debug.Log("ok");
+             controller.changeP2Score(1);
          }
     }
 }
